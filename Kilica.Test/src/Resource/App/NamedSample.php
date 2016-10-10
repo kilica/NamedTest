@@ -20,11 +20,11 @@ class NamedSample extends ResourceObject
      * @return $this
      *
      * @Inject
-     * @Named("testkey=testkey")
+     * @Named("test=test")
      */
-    public function onGet($testkey=null)
+    public function onGet($test=null)
     {
-        echo 'hello!';
+        echo ' hello!!! ' . $test;
 
         return $this;
     }

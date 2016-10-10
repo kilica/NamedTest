@@ -21,6 +21,6 @@ class AppModule extends AbstractModule
         $this->install(new PackageModule);
 //        $this->install(new DbAppPackage($_ENV['DB_DSN'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_READ']));
 
-        $this->bind()->annotatedWith('testkey')->toInstance($_ENV['TEST_KEY']);
+        $this->bind()->annotatedWith('test')->toInstance($_ENV['TEST_KEY']);
     }
 }
